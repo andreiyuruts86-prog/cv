@@ -1,97 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Личное CV Андрея: опыт работы, хобби, социальные сети и форма связи." />
+    <meta name="theme-color" content="#2563eb" />
     <title>Andrei CV</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td><img src="avatar.jpg" alt="Тут моя фотография"/></td>
-            <td>
-                <h1>Юруть Андрей</h1>
-                <p><em>Очень, очень хороший и <strong>вежливый мальчик.</strong></em></p>
-                <p>Скромен, добр, правдив.</p>
-                <p>Слушает маму и каждое утро делает зарядку.</p>
-                <p>Характер очень мягкий.</p>
-            </td>
-        </tr>
-    </table>
+    <a class="skip-link" href="#main-content">Перейти к основному контенту</a>
 
-    <hr>
+    <header class="profile" id="top">
+        <img src="avatar.jpg" alt="Фотография Андрея Юрутя" width="180" height="180" class="avatar" decoding="async" />
+        <div>
+            <h1>Юруть Андрей</h1>
+            <p><em>Очень, очень хороший и <strong>вежливый мальчик.</strong></em></p>
+            <p>Скромен, добр, правдив.</p>
+            <p>Слушает маму и каждое утро делает зарядку.</p>
+            <p>Характер очень мягкий.</p>
+        </div>
+    </header>
 
-    <h2>Мои социальные сети</h2>
+    <nav aria-label="Основная навигация" class="site-nav">
+        <ul>
+            <li><a href="#social">Соцсети</a></li>
+            <li><a href="#hobbies">Хобби</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#experience">Опыт</a></li>
+            <li><a href="youtube.html">Курсы</a></li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li><a href="https://instagram.com/andreiyuruts" target="_blank">Instagram</a></li>
-        <li><a href="https://t.me/andreiyuruts" target="_blank">Telegram</a></li>
-    </ul>
+    <main id="main-content">
+        <section id="social">
+            <h2>Мои социальные сети</h2>
+            <ul>
+                <li><a href="https://instagram.com/andreiyuruts" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://t.me/andreiyuruts" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+            </ul>
+        </section>
 
-    <hr>
+        <section id="hobbies">
+            <h2>Мои хобби</h2>
+            <ol type="I">
+                <li>Путешествия</li>
+                <li>Чтение книг</li>
+                <li>Слушание музыки</li>
+            </ol>
+        </section>
 
-    <h2>Мои хобби</h2>
-    <ol type="I">
-        <li>Путешествия</li>
-        <li>Чтение книг</li>
-        <li>Слушание музыки</li>
-    </ol>
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <p id="contact-hint">Минимум 2 символа в имени и 10 символов в сообщении.</p>
+            <form action="#" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя..." autocomplete="name" minlength="2" maxlength="50" required />
 
-    <hr>
-    <h2>Связаться со мной</h2>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email..." autocomplete="email" required />
 
-    <form>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" 
-        placeholder="Введите ваше имя...">
+                <label for="text">Ваше сообщение:</label>
+                <textarea id="text" name="message" rows="4" cols="30" placeholder="Введите сообщение..." aria-describedby="contact-hint" minlength="10" maxlength="500" required></textarea>
 
-        <br>
+                <button type="submit">Связаться!</button>
+            </form>
+        </section>
 
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" 
-        placeholder="Введите ваш email...">
+        <section id="experience">
+            <h2>Опыт работы</h2>
+            <table>
+                <caption>Профессиональный опыт</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Компания</th>
+                        <th scope="col">Должность</th>
+                        <th scope="col">Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EPAM</td>
+                        <td>Software Engineer</td>
+                        <td><time datetime="2016">2016</time> - <time datetime="2017">2017</time></td>
+                    </tr>
+                    <tr>
+                        <td>Software Outsourcing Service</td>
+                        <td>Lead Frontend</td>
+                        <td><time datetime="2017">2017</time> - <time datetime="2019">2019</time></td>
+                    </tr>
+                    <tr>
+                        <td>EPAM</td>
+                        <td>Software Engineer</td>
+                        <td><time datetime="2019">2019</time> - <time datetime="2020">2020</time></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" rows="2" cols="15"></textarea>
-    
-        <br>   
-
-        <input type="submit" value="Связаться!">
-
-    </form>
-
-    <hr>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2016 - 2017</td>
-        </tr>
-         <tr>
-            <td>Software Outsorcing Service</td>
-            <td>Lead Frontend</td>
-            <td>2017 - 2019</td>
-        </tr>
-         <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2019 - 2020</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Любимые Youtube Курсы</h2>
-    <a href="youtube.html">Посмотреть список</a>
-
+    <footer>
+        <h2>Любимые YouTube-курсы</h2>
+        <p><a href="youtube.html">Посмотреть список</a></p>
+        <address>
+            Email: <a href="mailto:andrei@example.com">andrei@example.com</a>
+        </address>
+        <p><a href="#top">↑ Наверх</a></p>
+    </footer>
 </body>
 </html>
