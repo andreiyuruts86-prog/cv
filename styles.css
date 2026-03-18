@@ -254,6 +254,29 @@ li + li { margin-top: 6px; }
 
 .feature-card p:last-child { margin-bottom: 0; }
 
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.contact-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    padding: 18px;
+}
+
+.contact-card p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-note {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -411,10 +434,16 @@ footer p { margin-bottom: 8px; }
     text-decoration: none;
 }
 
+.footer-links--stacked {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 @media (max-width: 900px) {
     .feature-grid,
     .feature-grid--single-row,
-    .timeline {
+    .timeline,
+    .contact-layout {
         grid-template-columns: 1fr;
     }
 }
@@ -453,6 +482,7 @@ footer p { margin-bottom: 8px; }
     .course-list li,
     .feature-card,
     .timeline-item,
+    .contact-card,
     input,
     textarea,
     .intro-card {

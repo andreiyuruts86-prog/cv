@@ -132,28 +132,40 @@
         <section id="contact" aria-labelledby="contact-title">
             <h2 id="contact-title">Связаться со мной</h2>
             <p id="contact-hint">Минимум 2 символа в имени и 10 символов в сообщении.</p>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend class="visually-hidden">Форма обратной связи</legend>
+            <div class="contact-layout">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend class="visually-hidden">Форма обратной связи</legend>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Ваше имя:</label>
-                            <input type="text" id="name" name="name" placeholder="Введите ваше имя..." autocomplete="name" minlength="2" maxlength="50" required />
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" id="name" name="name" placeholder="Введите ваше имя..." autocomplete="name" minlength="2" maxlength="50" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Ваш Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Введите ваш email..." autocomplete="email" inputmode="email" required />
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Ваш Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Введите ваш email..." autocomplete="email" inputmode="email" required />
-                        </div>
-                    </div>
+                        <label for="text">Ваше сообщение:</label>
+                        <textarea id="text" name="message" rows="4" cols="30" placeholder="Введите сообщение..." aria-describedby="contact-hint" minlength="10" maxlength="500" required></textarea>
 
-                    <label for="text">Ваше сообщение:</label>
-                    <textarea id="text" name="message" rows="4" cols="30" placeholder="Введите сообщение..." aria-describedby="contact-hint" minlength="10" maxlength="500" required></textarea>
+                        <button type="submit" enterkeyhint="send">Связаться!</button>
+                    </fieldset>
+                </form>
 
-                    <button type="submit" enterkeyhint="send">Связаться!</button>
-                </fieldset>
-            </form>
+                <aside class="contact-card" aria-label="Быстрые контакты">
+                    <h3>Быстрые контакты</h3>
+                    <p>Если хотите написать без формы, удобнее всего использовать один из каналов ниже.</p>
+                    <ul class="footer-links footer-links--stacked">
+                        <li><a href="https://t.me/andreiyuruts" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                        <li><a href="https://instagram.com/andreiyuruts" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                    <p class="contact-note">Обычно быстрее всего отвечаю в мессенджере.</p>
+                </aside>
+            </div>
         </section>
 
         <section id="experience" aria-labelledby="experience-title">
