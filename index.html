@@ -1,97 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Личное CV Андрея: опыт работы, навыки, хобби, социальные сети и форма связи." />
+    <meta name="theme-color" content="#2563eb" />
+    <meta property="og:title" content="Andrei CV" />
+    <meta property="og:description" content="Личное CV Андрея: опыт, навыки, контакты и полезные курсы." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="avatar.jpg" />
+    <meta property="og:locale" content="ru_RU" />
     <title>Andrei CV</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td><img src="avatar.jpg" alt="Тут моя фотография"/></td>
-            <td>
-                <h1>Юруть Андрей</h1>
-                <p><em>Очень, очень хороший и <strong>вежливый мальчик.</strong></em></p>
-                <p>Скромен, добр, правдив.</p>
-                <p>Слушает маму и каждое утро делает зарядку.</p>
-                <p>Характер очень мягкий.</p>
-            </td>
-        </tr>
-    </table>
+    <a class="skip-link" href="#main-content">Перейти к основному контенту</a>
 
-    <hr>
+    <header class="profile" id="top">
+        <img src="avatar.jpg" alt="Фотография Андрея Юрутя" width="180" height="180" class="avatar" decoding="async" />
+        <div>
+            <p class="eyebrow">Frontend CV</p>
+            <h1>Юруть Андрей</h1>
+            <p><em>Очень, очень хороший и <strong>вежливый мальчик.</strong></em></p>
+            <p>Скромен, добр, правдив.</p>
+            <p>Слушает маму и каждое утро делает зарядку.</p>
+            <p>Характер очень мягкий.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Связаться</a>
+                <a class="btn btn-soft" href="youtube.html">Курсы</a>
+            </div>
+        </div>
+    </header>
 
-    <h2>Мои социальные сети</h2>
+    <section class="stats" aria-label="Краткие факты">
+        <article class="stat-card">
+            <span class="stat-value">3+</span>
+            <span class="stat-label">места работы в опыте</span>
+        </article>
+        <article class="stat-card">
+            <span class="stat-value">6</span>
+            <span class="stat-label">ключевых навыков</span>
+        </article>
+        <article class="stat-card">
+            <span class="stat-value">2</span>
+            <span class="stat-label">быстрых способа связи</span>
+        </article>
+    </section>
 
-    <ul>
-        <li><a href="https://instagram.com/andreiyuruts" target="_blank">Instagram</a></li>
-        <li><a href="https://t.me/andreiyuruts" target="_blank">Telegram</a></li>
-    </ul>
+    <nav aria-label="Основная навигация" class="site-nav">
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#social">Соцсети</a></li>
+            <li><a href="#hobbies">Хобби</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#strengths">Сильные стороны</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#experience">Опыт</a></li>
+            <li><a href="youtube.html">Курсы</a></li>
+        </ul>
+    </nav>
 
-    <hr>
+    <main id="main-content" aria-labelledby="main-title">
+        <h2 id="main-title" class="visually-hidden">Основной контент резюме</h2>
 
-    <h2>Мои хобби</h2>
-    <ol type="I">
-        <li>Путешествия</li>
-        <li>Чтение книг</li>
-        <li>Слушание музыки</li>
-    </ol>
+        <section id="about" class="intro-card" aria-labelledby="about-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="about-title">Коротко обо мне</h2>
+                    <p>Люблю понятные интерфейсы, чистую вёрстку и спокойную, предсказуемую работу без визуального шума.</p>
+                </div>
+            </div>
+            <ul class="chip-list">
+                <li>Чистая структура</li>
+                <li>Понятный UI</li>
+                <li>Аккуратная вёрстка</li>
+                <li>Поддерживаемый код</li>
+            </ul>
+        </section>
 
-    <hr>
-    <h2>Связаться со мной</h2>
+        <div class="top-sections">
+            <section id="social" aria-labelledby="social-title">
+                <h2 id="social-title">Мои социальные сети</h2>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com/andreiyuruts" target="_blank" rel="me noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://t.me/andreiyuruts" target="_blank" rel="me noopener noreferrer">Telegram</a></li>
+                </ul>
+            </section>
 
-    <form>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" 
-        placeholder="Введите ваше имя...">
+            <section id="hobbies" aria-labelledby="hobbies-title">
+                <h2 id="hobbies-title">Мои хобби</h2>
+                <ol type="I">
+                    <li>Путешествия</li>
+                    <li>Чтение книг</li>
+                    <li>Слушание музыки</li>
+                </ol>
+            </section>
+        </div>
 
-        <br>
+        <div class="details-grid">
+            <section id="skills" aria-labelledby="skills-title">
+                <h2 id="skills-title">Ключевые навыки</h2>
+                <ul class="chip-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Адаптивная вёрстка</li>
+                    <li>Accessibility (a11y)</li>
+                    <li>Git</li>
+                </ul>
+            </section>
 
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" 
-        placeholder="Введите ваш email...">
+            <section id="strengths" aria-labelledby="strengths-title">
+                <h2 id="strengths-title">Почему со мной удобно работать</h2>
+                <div class="feature-grid feature-grid--single-row">
+                    <article class="feature-card">
+                        <h3>Аккуратность</h3>
+                        <p>Люблю, когда интерфейс выглядит чисто, понятно и логично даже без лишних объяснений.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Доброжелательность</h3>
+                        <p>Спокойная коммуникация, уважение к людям и конструктивный подход в обсуждениях.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Стабильность</h3>
+                        <p>Предпочитаю простые, поддерживаемые решения, которые легко развивать дальше.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
 
-        <br>
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Связаться со мной</h2>
+            <p id="contact-hint">Минимум 2 символа в имени и 10 символов в сообщении.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend class="visually-hidden">Форма обратной связи</legend>
 
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" rows="2" cols="15"></textarea>
-    
-        <br>   
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя..." autocomplete="name" minlength="2" maxlength="50" required />
+                        </div>
 
-        <input type="submit" value="Связаться!">
+                        <div class="form-group">
+                            <label for="email">Ваш Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Введите ваш email..." autocomplete="email" inputmode="email" required />
+                        </div>
+                    </div>
 
-    </form>
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" name="message" rows="4" cols="30" placeholder="Введите сообщение..." aria-describedby="contact-hint" minlength="10" maxlength="500" required></textarea>
 
-    <hr>
+                    <button type="submit" enterkeyhint="send">Связаться!</button>
+                </fieldset>
+            </form>
+        </section>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2016 - 2017</td>
-        </tr>
-         <tr>
-            <td>Software Outsorcing Service</td>
-            <td>Lead Frontend</td>
-            <td>2017 - 2019</td>
-        </tr>
-         <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2019 - 2020</td>
-        </tr>
-    </table>
+        <section id="experience" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="experience-title">Опыт работы</h2>
+                    <p>Краткая история профессионального развития в формате карточек и таблицы.</p>
+                </div>
+            </div>
+            <div class="timeline" aria-label="Ключевые этапы опыта">
+                <article class="timeline-item">
+                    <p class="eyebrow">2016–2017</p>
+                    <h3>EPAM</h3>
+                    <p>Software Engineer</p>
+                </article>
+                <article class="timeline-item">
+                    <p class="eyebrow">2017–2019</p>
+                    <h3>Software Outsourcing Service</h3>
+                    <p>Lead Frontend</p>
+                </article>
+                <article class="timeline-item">
+                    <p class="eyebrow">2019–2020</p>
+                    <h3>EPAM</h3>
+                    <p>Software Engineer</p>
+                </article>
+            </div>
+            <div class="table-wrapper" role="region" aria-labelledby="experience-title">
+                <table>
+                    <caption>Профессиональный опыт</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Компания</th>
+                            <th scope="col">Должность</th>
+                            <th scope="col">Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EPAM</td>
+                            <td>Software Engineer</td>
+                            <td><time datetime="2016">2016</time> - <time datetime="2017">2017</time></td>
+                        </tr>
+                        <tr>
+                            <td>Software Outsourcing Service</td>
+                            <td>Lead Frontend</td>
+                            <td><time datetime="2017">2017</time> - <time datetime="2019">2019</time></td>
+                        </tr>
+                        <tr>
+                            <td>EPAM</td>
+                            <td>Software Engineer</td>
+                            <td><time datetime="2019">2019</time> - <time datetime="2020">2020</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
-    <hr>
-
-    <h2>Любимые Youtube Курсы</h2>
-    <a href="youtube.html">Посмотреть список</a>
-
+    <footer>
+        <h2>Любимые YouTube-курсы</h2>
+        <p><a href="youtube.html">Посмотреть список</a></p>
+        <ul class="footer-links">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#top">↑ Наверх</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

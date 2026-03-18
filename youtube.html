@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Youtube курсы</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Подборка YouTube-курсов по HTML, CSS и JavaScript." />
+    <meta name="theme-color" content="#2563eb" />
+    <meta property="og:title" content="YouTube курсы" />
+    <meta property="og:description" content="Подборка YouTube-курсов по HTML, CSS и JavaScript." />
+    <meta property="og:type" content="website" />
+    <title>YouTube курсы</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <ul>
-        <li><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=3107s" target="_blank">Начни учить HTML с этого курса (Понятно даже чайнику)</a></li>
-        <li><a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&t=13s" target="_blank">CSS для Начинающих - Практический Курс</a></li>
-        <li><a href="https://www.youtube.com/watch?v=fcMcf_4PjfI&t=743s" target="_blank">JavaScript c Нуля - Курс для начинающих С ПРАКТИКОЙ (2025)</a></li>    
-    </ul>
+    <a class="skip-link" href="#main-content">Перейти к основному контенту</a>
+
+    <nav class="site-nav" aria-label="Навигация страницы">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="youtube.html" aria-current="page">Курсы</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" aria-labelledby="courses-title">
+        <section class="intro-card" aria-labelledby="courses-title">
+            <p class="eyebrow">Learning resources</p>
+            <h1 id="courses-title">Полезные YouTube-курсы</h1>
+            <p>Небольшая подборка видео, с которых удобно начать путь в HTML, CSS и JavaScript.</p>
+            <ul class="chip-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <div class="course-tip">
+            <strong>Совет:</strong> лучше проходить курсы последовательно — сначала HTML, потом CSS, затем JavaScript.
+        </div>
+
+        <ul class="course-list">
+            <li><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU&t=3107s" target="_blank" rel="noopener noreferrer">Начни учить HTML с этого курса (Понятно даже чайнику)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&t=13s" target="_blank" rel="noopener noreferrer">CSS для начинающих — практический курс</a></li>
+            <li><a href="https://www.youtube.com/watch?v=fcMcf_4PjfI&t=743s" target="_blank" rel="noopener noreferrer">JavaScript с нуля — курс для начинающих с практикой (2025)</a></li>
+        </ul>
+
+        <ul class="footer-links footer-links--inline">
+            <li><a href="index.html">← Вернуться на главную</a></li>
+            <li><a href="#main-content">Наверх раздела</a></li>
+        </ul>
+    </main>
 </body>
 </html>
