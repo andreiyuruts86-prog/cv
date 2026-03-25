@@ -293,7 +293,7 @@ fieldset {
 
 .form-group { display: grid; gap: 8px; }
 
-input, textarea, button {
+input, textarea, select, button {
     padding: 11px 12px;
     border: 1px solid #d1d5db;
     border-radius: 10px;
@@ -387,6 +387,10 @@ th, td {
 }
 
 th { background: #f8fafc; }
+tbody th[scope="row"] {
+    font-weight: 600;
+    background: #f8fafc;
+}
 tbody tr:nth-child(even) { background: #fafafa; }
 
 .skip-link {
@@ -485,6 +489,7 @@ footer p { margin-bottom: 8px; }
     .contact-card,
     input,
     textarea,
+    select,
     .intro-card {
         background: #1f2937;
         color: #e5e7eb;
@@ -510,6 +515,7 @@ footer p { margin-bottom: 8px; }
 
     .btn-soft:hover { background: #1d4ed8; color: #fff; }
     th { background: #1f2937; }
+    tbody th[scope="row"] { background: #1f2937; }
     table { background: transparent; }
     tbody tr:nth-child(even) { background: #0b1324; }
     .stat-label, .section-heading p { color: var(--text-muted); }

@@ -54,6 +54,7 @@
             <li><a href="#hobbies">Хобби</a></li>
             <li><a href="#skills">Навыки</a></li>
             <li><a href="#strengths">Сильные стороны</a></li>
+            <li><a href="#projects">Проекты</a></li>
             <li><a href="#contact">Контакты</a></li>
             <li><a href="#experience">Опыт</a></li>
             <li><a href="youtube.html">Курсы</a></li>
@@ -129,6 +130,29 @@
             </section>
         </div>
 
+        <section id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="projects-title">Учебные проекты</h2>
+                    <p>Небольшие практические проекты, чтобы закреплять навыки вёрстки и работы с интерфейсами.</p>
+                </div>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Landing Page</h3>
+                    <p>Одностраничный лендинг с адаптивной сеткой, аккуратной типографикой и фокусом на доступность.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>UI Kit</h3>
+                    <p>Набор переиспользуемых компонентов: кнопки, карточки, формы и состояния для разных сценариев.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Dashboard</h3>
+                    <p>Макет панели с таблицами и фильтрами, где важны визуальная иерархия и чистая структура данных.</p>
+                </article>
+            </div>
+        </section>
+
         <section id="contact" aria-labelledby="contact-title">
             <h2 id="contact-title">Связаться со мной</h2>
             <p id="contact-hint">Минимум 2 символа в имени и 10 символов в сообщении.</p>
@@ -149,6 +173,22 @@
                             </div>
                         </div>
 
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="topic">Тема:</label>
+                                <input type="text" id="topic" name="topic" placeholder="Например: обсуждение проекта" minlength="3" maxlength="80" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-method">Как удобнее ответить:</label>
+                                <select id="contact-method" name="contact-method" required>
+                                    <option value="">Выберите вариант</option>
+                                    <option value="telegram">Telegram</option>
+                                    <option value="email">Email</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <label for="text">Ваше сообщение:</label>
                         <textarea id="text" name="message" rows="4" cols="30" placeholder="Введите сообщение..." aria-describedby="contact-hint" minlength="10" maxlength="500" required></textarea>
 
@@ -164,6 +204,7 @@
                         <li><a href="https://instagram.com/andreiyuruts" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     </ul>
                     <p class="contact-note">Обычно быстрее всего отвечаю в мессенджере.</p>
+                    <p class="contact-note">Среднее время ответа: <time datetime="PT24H">до 24 часов</time>.</p>
                 </aside>
             </div>
         </section>
@@ -204,17 +245,17 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>EPAM</td>
+                            <th scope="row">EPAM</th>
                             <td>Software Engineer</td>
                             <td><time datetime="2016">2016</time> - <time datetime="2017">2017</time></td>
                         </tr>
                         <tr>
-                            <td>Software Outsourcing Service</td>
+                            <th scope="row">Software Outsourcing Service</th>
                             <td>Lead Frontend</td>
                             <td><time datetime="2017">2017</time> - <time datetime="2019">2019</time></td>
                         </tr>
                         <tr>
-                            <td>EPAM</td>
+                            <th scope="row">EPAM</th>
                             <td>Software Engineer</td>
                             <td><time datetime="2019">2019</time> - <time datetime="2020">2020</time></td>
                         </tr>
